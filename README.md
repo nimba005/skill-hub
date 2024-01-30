@@ -1,5 +1,6 @@
 # SKILL-HUB
-![image](https://github.com/nimba005/portfolio-project/assets/105091783/86f39053-417c-432e-ad2f-92173b2d4a9a)
+![image](https://github.com/nimba005/portfolio-project/assets/105091783/94c01b68-4502-4121-adf9-986ec2f169b5)
+
 
 
 - Welcome to SKILL-HUB, our revolutionary online learning platform, which is here to redefine the way you learn and grow. Whether you are a seasoned professional looking to upskill or a passionate learner eager to explore new horizons, Skill-Hub offers a diverse range of courses and a dynamic learning environment tailored to your needs.
