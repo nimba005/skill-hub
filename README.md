@@ -16,6 +16,8 @@
 * Encourage learners to share their knowledge through explanatory content.
 * Our journey is a continuous learning process, and we are committed to evolving SKILL-HUB into a more advanced and enriching platform.
 ## Features
+![image-1](https://github.com/nimba005/portfolio-project/assets/105091783/6a483e55-357d-4790-8f36-d644841ddcdb)
+
 * User Authentication: Secure sign-up and login functionality for you
 * Course: Easily can access the courses and start watching them.
 * Simple and eye-friendly website SKILL-HUB where simplicity meets functionality! We've crafted an online experience that puts ease of use at the forefront, ensuring that every visitor can effortlessly navigate and enjoy their time here.
