@@ -1,7 +1,7 @@
 # SKILL-HUB
-Welcome to SKILL-HUB, our revolutionary online learning platform, which is here to redefine the way you learn and grow. Whether you are a seasoned professional looking to upskill or a passionate learner eager to explore new horizons, Skill-Hub offers a diverse range of courses and a dynamic learning environment tailored to your needs.
-[BLOG](https://medium.com/@nimbaoyugi/skill-hub-787df49797b7)
-In the development of this project, we utilized HTML, CSS, JS, and Python(Flask). As a junior developer, we encountered challenges such as responsiveness and project design choice
+- Welcome to SKILL-HUB, our revolutionary online learning platform, which is here to redefine the way you learn and grow. Whether you are a seasoned professional looking to upskill or a passionate learner eager to explore new horizons, Skill-Hub offers a diverse range of courses and a dynamic learning environment tailored to your needs.
+* [BLOG](https://medium.com/@nimbaoyugi/skill-hub-787df49797b7)
+- In the development of this project, we utilized HTML, CSS, JS, and Python(Flask). As a junior developer, we encountered challenges such as responsiveness and project design choice
 ## Looking ahead, we have ambitious plans to enhance the website further:
 * Remove Vimeo videos
 * Create and upload our videos
@@ -27,3 +27,13 @@ In the development of this project, we utilized HTML, CSS, JS, and Python(Flask)
 * [Flask-cors](https://flask-cors.readthedocs.io/en/latest/)
 ## Installation
 1. Clone the repository: `git clone https://github.com/nimba005/portfolio-project/tree/master.git`
+2. Navigate to the project directory: `cd portfolio-project`
+3. `python -m backend.flask_app.app`
+4. Open your browser and go to `https//localhost:3000` to access the platform
+## Usage
+1. Sign up/login: Create account or log in with your credentials
+2. Explore courses:
+## Contributer and Credit
+* [Nimba Eric John](https://github.com/nimba005)
+* `nimbaoyugi@gmail.com`
+* Noran Saber
