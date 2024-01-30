@@ -26,4 +26,4 @@ In the development of this project, we utilized HTML, CSS, JS, and Python(Flask)
 * [SQLAlchemy](https://www.sqlalchemy.org/)
 * [Flask-cors](https://flask-cors.readthedocs.io/en/latest/)
 ## Installation
-1. Clone the repository: git clone https://github.com/nimba005/portfolio-project/tree/master.git
+1. Clone the repository: `git clone https://github.com/nimba005/portfolio-project/tree/master.git`
