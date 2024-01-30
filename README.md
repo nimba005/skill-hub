@@ -1,4 +1,6 @@
 # SKILL-HUB
+![image](https://github.com/nimba005/portfolio-project/assets/105091783/ced48ecb-caf5-4899-9ae5-b0bdd408556e)
+
 - Welcome to SKILL-HUB, our revolutionary online learning platform, which is here to redefine the way you learn and grow. Whether you are a seasoned professional looking to upskill or a passionate learner eager to explore new horizons, Skill-Hub offers a diverse range of courses and a dynamic learning environment tailored to your needs.
 * [BLOG](https://medium.com/@nimbaoyugi/skill-hub-787df49797b7)
 - In the development of this project, we utilized HTML, CSS, JS, and Python(Flask). As a junior developer, we encountered challenges such as responsiveness and project design choice
