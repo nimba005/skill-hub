@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to font awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <!-- Link to google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Link to css main sheet -->
+    <link rel="stylesheet" href="../assets/style/contactUs.css">
+    <link rel="stylesheet" href="../assets/style/common.css">
+    <!-- Link to icon  image -->
+    <link rel="icon" href="../img/title-log.jpg">
+    <title>SKILL-HUB</title>
+</head>
+<body>
+<!-- Start our navbar -->
+<nav class="nav">
+    <input type="checkbox" id="nav__checkbox" class="nav__checkbox">
+    <label for="nav__checkbox" class="nav__toggle">
+      <img src="https://cdn0.iconfinder.com/data/icons/user-interface-150/24/List_menu_toggle-512.png" style='width: 30px; height: 30px;' class="hamburger" />
+      <img src="https://img.icons8.com/plumpy/30/000000/x.png" style='width: 20px; height: 20px;' class="close" />
+    </label>
+
+    <ul class="nav__menu">
+      <li>
+        <a class='logo' href="index.html">
+          SKILL-HUB
+        </a>
+      </li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a class='active' href="contactUs.html">Contact</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a style='display: none;' id='logout' href="#">Logout</a></li>
+    </ul>
+  </nav>
+  <!-- Ending navbar -->
+<!-- Landing img -->
+<section class='about-land'>
+    <div class="about-layout"></div>
+    <div class="about-text">
+    <span>Contact</span>
+</div>
+</section>
+<!-- Start Contact Us -->
+<div class="contact">
+    <div class="overkay"></div>
+    <div class="cont-container">
+        <h2>Contact Us</h2>
+        <div class="left">
+            <form action="">
+                <input type="text" placeholder="Your Name" name="user-name">
+                <input type="text" placeholder="Your number" name="user-number">
+                <input type="email" placeholder="Your email" name="user-email">
+                <input type="text" placeholder="Subject" name="Subject">
+            </form>
+        </div>
+        <div class="right">
+            <textarea name="message" placeholder=" Your Message " ></textarea>
+            <input type="submit" Value="send" class='send-us-butn'>
+        </div>
+    </div>
+</div>
+<!-- End Contact Us -->
+
+    <!-- Footer -->
+    <div class="footer-basic">
+        <footer>
+		<div class="social"><a target='_blank' href="https://github.com/nimba005"><i class="fab fa-github"></i></a><a target='_blank' href="https://twitter.com/nimbajohn"><i class=fab fa-twitter"></i></a><a target='_blank' href="https://www.linkedin.com/in/nimba-eric-john-4141592b1/"><i class="fab fa-linkedin"></i></a></div>
+            <!--<ul class="list-inline">
+                <li class="list-inline-item"><a href="index.html">Home</a></li>
+                <li class="list-inline-item"><a href="courses.html">Courses</a></li>
+                <li class="list-inline-item"><a href="about.html">About</a></li>
+                <li class="list-inline-item"><a href="contactUs.html">Contact Us</a></li>
+            </ul> -->
+            <p class="copyright">Nimba Eric John ©2023</p>
+        </footer>
+    </div>
+</div>
+<script src='../assets/script/main.js'></script>
+</body>
