@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to font awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <!-- Link to google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Link to css main sheet -->
+    <link rel="stylesheet" href="../assets/style/details.css">
+    <!-- Link to the common css section -->
+    <link rel="stylesheet" href="../assets/style/common.css">
+    <!-- Link to normalize  -->
+    <link rel="stylesheet" href="../assets/style/Normalize.css">
+    <!-- Link to icon image -->
+    <link rel="icon" href="../img/title-log.jpg">
+    <title>SKILL-HUB</title>
+</head>
+<body>
+
+<!-- Start our navbar -->
+<nav class="nav">
+  <input type="checkbox" id="nav__checkbox" class="nav__checkbox">
+  <label for="nav__checkbox" class="nav__toggle">
+    <img src="https://cdn0.iconfinder.com/data/icons/user-interface-150/24/List_menu_toggle-512.png" style='width: 30px; height: 30px;' class="hamburger" />
+    <img src="https://img.icons8.com/plumpy/30/000000/x.png" style='width: 20px; height: 20px;' class="close" />
+  </label>
+
+  <ul class="nav__menu">
+    <li>
+      <a class='logo' href="index.html">
+        SKILL-HUB
+      </a>
+    </li>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contactUs.html">Contact</a></li>
+    <li><a href="courses.html">Courses</a></li>
+    <li><a style='display: none;' id='logout' href="#">Logout</a></li>
+  </ul>
+
+</nav>
+<!-- Ending navbar -->
+
+<!-- Start the detail section -->
+<section class="courses-detail">
+      <div class="info-div">
+        <h1 id="course-tit"> Course Title</h1>
+        <p id="course-desc"> <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, ducimus ex. Doloremque provident corrupti, beatae corporis ex --></p>
+        <div class="likes">
+          <span>TOTAL LIKES: <span id="tot-likes">0</span></span>
+        <span>CREATED BY: ADMIN</span>
+      </div>
+      <button class="hover-me" id="likeBt">
+
+          LIKE
+      </button>
+      </div>
+</section>
+
+<!-- Video section -->
+<div class="video-container">
+  <!-- <div class="video-details">
+    <h3>Video Title</h3>
+  <iframe src="https://player.vimeo.com/video/521910852?title=0&amp;byline=0&amp;portrait=0&amp;speed=0&amp;badge=0&amp;autopause=0&amp;airplay=0&amp;audio_tracks=0&amp;chapters=0&amp;chromecast=0&amp;closed_captions=0&amp;transcript=0&amp;player_id=0&amp;app_id=281930" width="1920" height="1080" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Full React Tutorial #14 - useEffect Hook (the basics)">
+  </iframe>
+</div>
+
+<div class="video-details">
+    <h3>Video Title</h3>
+  <iframe autoplay controls src="https://player.vimeo.com/video/804255711?title=0&amp;byline=0&amp;portrait=0&amp;speed=0&amp;badge=0&amp;autopause=0&amp;airplay=0&amp;audio_tracks=0&amp;chapters=0&amp;chromecast=0&amp;closed_captions=0&amp;transcript=0&amp;player_id=0&amp;app_id=281930"></iframe>
+</div>
+
+<div class="video-details">
+    <h3>Video Title</h3>
+  <iframe autoplay controls src="https://player.vimeo.com/video/744190197?title=0&amp;byline=0&amp;portrait=0&amp;speed=0&amp;badge=0&amp;autopause=0&amp;airplay=0&amp;audio_tracks=0&amp;chapters=0&amp;chromecast=0&amp;closed_captions=0&amp;transcript=0&amp;player_id=0&amp;app_id=281930"></iframe>
+</div>
+
+<div class="video-details">
+    <h3>Video Title</h3>
+  <iframe autoplay controls src="https://player.vimeo.com/video/744190197?title=0&amp;byline=0&amp;portrait=0&amp;speed=0&amp;badge=0&amp;autopause=0&amp;airplay=0&amp;audio_tracks=0&amp;chapters=0&amp;chromecast=0&amp;closed_captions=0&amp;transcript=0&amp;player_id=0&amp;app_id=281930"></iframe>
+</div>
+<div class="video-details">
+    <h3>Video Title</h3>
+  <iframe autoplay controls src="https://player.vimeo.com/video/37956307?title=0&amp;byline=0&amp;portrait=0&amp;speed=0&amp;badge=0&amp;autopause=0&amp;airplay=0&amp;audio_tracks=0&amp;chapters=0&amp;chromecast=0&amp;closed_captions=0&amp;transcript=0&amp;player_id=0&amp;app_id=281930"></iframe>
+</div>
+
+<div class="video-details">
+    <h3>Video Title</h3>
+  <iframe autoplay controls src="https://player.vimeo.com/video/521910852?title=0&amp;byline=0&amp;portrait=0&amp;speed=0&amp;badge=0&amp;autopause=0&amp;airplay=0&amp;audio_tracks=0&amp;chapters=0&amp;chromecast=0&amp;closed_captions=0&amp;transcript=0&amp;player_id=0&amp;app_id=281930"></iframe>
+</div>
+
+<div class="video-details">
+    <h3>Video Title</h3>
+  <iframe autoplay controls src="https://player.vimeo.com/video/521910852?title=0&amp;byline=0&amp;portrait=0&amp;speed=0&amp;badge=0&amp;autopause=0&amp;airplay=0&amp;audio_tracks=0&amp;chapters=0&amp;chromecast=0&amp;closed_captions=0&amp;transcript=0&amp;player_id=0&amp;app_id=281930"></iframe>
+</div>
+
+<div class="video-details">
+    <h3>Video Title</h3>
+  <iframe autoplay controls src="https://player.vimeo.com/video/804255711?title=0&amp;byline=0&amp;portrait=0&amp;speed=0&amp;badge=0&amp;autopause=0&amp;airplay=0&amp;audio_tracks=0&amp;chapters=0&amp;chromecast=0&amp;closed_captions=0&amp;transcript=0&amp;player_id=0&amp;app_id=281930"></iframe>
+</div>
+
+<div class="video-details">
+    <h3>Video Title</h3>
+  <iframe autoplay controls src="https://player.vimeo.com/video/804255711?title=0&amp;byline=0&amp;portrait=0&amp;speed=0&amp;badge=0&amp;autopause=0&amp;airplay=0&amp;audio_tracks=0&amp;chapters=0&amp;chromecast=0&amp;closed_captions=0&amp;transcript=0&amp;player_id=0&amp;app_id=281930"></iframe>
+</div>
+<div class="video-details">
+    <h3>Video Title</h3>
+  <iframe autoplay controls src="https://player.vimeo.com/video/715508071?title=0&amp;byline=0&amp;portrait=0&amp;speed=0&amp;badge=0&amp;autopause=0&amp;airplay=0&amp;audio_tracks=0&amp;chapters=0&amp;chromecast=0&amp;closed_captions=0&amp;transcript=0&amp;player_id=0&amp;app_id=281930"></iframe>
+</div> -->
+</div>
+</div>
+                      <!-- Footer -->
+    <div class="footer-basic">
+        <footer>
+          <div class="social"><a target='_blank' href="https://github.com/Oluwamarcellus "><i class="fab fa-github"></i></a><a target='_blank' href="https://twitter.com/Hayyddex"><i class="fab fa-twitter"></i></a><a target='_blank' href="https://www.linkedin.com/in/devmarc/"><i class="fab fa-linkedin"></i></a></div>
+            <!-- <ul class="list-inline">
+              <li class="list-inline-item"><a href="index.html">Home</a></li>
+              <li class="list-inline-item"><a href="courses.html">Courses</a></li>
+              <li class="list-inline-item"><a href="about.html">About</a></li>
+              <li class="list-inline-item"><a href="contactUs.html">Contact Us</a></li>
+            </ul> -->
+            <p class="copyright">Nimba Eric John ©2023</p>
+        </footer>
+    </div>
+        </div>
+        <script src='../assets/script/main.js'></script>
+      <script src='../assets/script/details.js'></script>
+</body>
+</html>

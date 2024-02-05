@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link to font awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
+    <!-- Link to google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+    <!-- Link to css main sheet -->
+    <link rel="stylesheet" href="../assets/style/courses.css" />
+    <!-- link to the css common file -->
+    <link rel="stylesheet" href="../assets/style/common.css" />
+    <!-- Link to icon image -->
+    <link rel="icon" href="../img/title-log.jpg" />
+    <title>SKILL-HUB</title>
+  </head>
+<!-- Start our navbar -->
+<nav class="nav">
+  <input type="checkbox" id="nav__checkbox" class="nav__checkbox">
+  <label for="nav__checkbox" class="nav__toggle">
+    <img src="https://cdn0.iconfinder.com/data/icons/user-interface-150/24/List_menu_toggle-512.png" style='width: 30px; height: 30px;' class="hamburger" />
+    <img src="https://img.icons8.com/plumpy/30/000000/x.png" style='width: 20px; height: 20px;' class="close" />
+  </label>
+
+  <ul class="nav__menu">
+    <li>
+      <a class='logo' href="index.html">
+        SKILL-HUB
+      </a>
+    </li>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contactUs.html">Contact</a></li>
+    <li><a class='active' href="courses.html">Courses</a></li>
+    <li><a style='display: none;' id='logout' href="#">Logout</a></li>
+  </ul>
+</nav>
+<!-- Ending navbar -->
+
+    <!-- Landing img -->
+    <section class="about-land">
+      <div class="about-layout"></div>
+      <div class="about-text">
+        <span>Our Courses</span>
+      </div>
+    </section>
+    <!-- End of Landing img  -->
+
+    <!-- Start courses Section -->
+    <div class="courses-sec">
+            <span>TOP</span>
+            <p class='course-p top'>Top Courses</p>
+            <div class="top-container container">
+              <!--
+              <div class="square">
+                <img
+                  src="https://images.unsplash.com/photo-1504610926078-a1611febcad3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e1c8fe0c9197d66232511525bfd1cc82&auto=format&fit=crop&w=1100&q=80">
+                  <div class="title">Course title</div>
+                <p class='desc'> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste natus debitis neque. Et quos maiores neque, expedita aperiam
+                </p>
+              </div>
+              <div class="square">
+                <img
+                  src="https://i.pinimg.com/564x/33/18/05/331805543cc8ceb7faee632ac5b9163f.jpg">
+                  <div class="title">Course title</div>
+                <p class='desc'> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste natus debitis neque. Et quos maiores neque, expedita aperiam
+                </p>
+              </div>
+              <div class="square">
+                <img
+                  src="https://i.pinimg.com/564x/9a/68/71/9a68716efc331fcc84e3a4ce5f23d18d.jpg">
+                  <div class="title">Course title</div>
+                <p class='desc'> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste natus debitis neque. Et quos maiores neque, expedita aperiam
+                </p>
+              </div>
+
+              <div class="square">
+                <img
+                  src="https://i.pinimg.com/564x/e4/56/94/e4569443714172f2773aea229195685c.jpg">
+                  <div class="title">Course title</div>
+                <p class='desc'> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste natus debitis neque. Et quos maiores neque, expedita aperiam
+                </p>
+              </div>
+
+              <div class="square">
+                <img
+                  src="https://i.pinimg.com/564x/bb/0d/0c/bb0d0c5a527a0685eb1b1405a867851f.jpg">
+                  <div class="title">Course title</div>
+                <p class='desc'> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste natus debitis neque. Et quos maiores neque, expedita aperiam
+                </p>
+              </div>
+              <div class="square">
+                <img
+                  src="https://i.pinimg.com/564x/11/8a/83/118a835336b1e8902278e64d71db1438.jpg">
+                  <div class="title">Course title</div>
+                <p class='desc'> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste natus debitis neque. Et quos maiores neque, expedita aperiam
+                </p>
+              </div>
+              <div class="square">
+                <img
+                  src="https://images.unsplash.com/photo-1605379399642-870262d3d051?q=80&w=1812&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                  <div class="title">Course title</div>
+                <p class='desc'> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste natus debitis neque. Et quos maiores neque, expedita aperiam
+                </p>
+              </div>
+
+              <div class="square">
+                <img
+                  src="https://images.unsplash.com/photo-1504610926078-a1611febcad3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e1c8fe0c9197d66232511525bfd1cc82&auto=format&fit=crop&w=1100&q=80">
+                  <div class="title">Course title</div>
+                <p class='desc'> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste natus debitis neque. Et quos maiores neque, expedita aperiam
+                </p>
+              </div>
+
+              <div class="square">
+                <img
+                  src="https://images.unsplash.com/photo-1504610926078-a1611febcad3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e1c8fe0c9197d66232511525bfd1cc82&auto=format&fit=crop&w=1100&q=80">
+                  <div class="title">Course title</div>
+                <p class='desc'> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste natus debitis neque. Et quos maiores neque, expedita aperiam
+                </p>
+              </div>
+              -->
+            </div>
+
+      <span>COURSES</span>
+      <p class='course-p'>Popular Courses</p>
+
+      <div class="pop-container container">
+        <!--
+        <div class="square">
+          <img
+            src="https://images.unsplash.com/photo-1504610926078-a1611febcad3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e1c8fe0c9197d66232511525bfd1cc82&auto=format&fit=crop&w=1100&q=80">
+            <div class="title">Course title</div>
+          <p class='desc'> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste natus debitis neque. Et quos maiores neque, expedita aperiam
+          </p>
+        </div>
+
+        <div class="square">
+          <img
+            src="https://i.pinimg.com/564x/33/18/05/331805543cc8ceb7faee632ac5b9163f.jpg">
+            <div class="title">Course title</div>
+          <p class='desc'> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste natus debitis neque. Et quos maiores neque, expedita aperiam
+          </p>
+        </div>
+
+        <div class="square">
+          <img
+            src="https://i.pinimg.com/564x/9a/68/71/9a68716efc331fcc84e3a4ce5f23d18d.jpg">
+            <div class="title">Course title</div>
+          <p class='desc'> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste natus debitis neque. Et quos maiores neque, expedita aperiam
+          </p>
+        </div>
+
+        <div class="square">
+          <img
+            src="https://i.pinimg.com/564x/e4/56/94/e4569443714172f2773aea229195685c.jpg">
+            <div class="title">Course title</div>
+          <p class='desc'> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste natus debitis neque. Et quos maiores neque, expedita aperiam
+          </p>
+        </div>
+
+        <div class="square">
+          <img
+            src="https://i.pinimg.com/564x/bb/0d/0c/bb0d0c5a527a0685eb1b1405a867851f.jpg">
+            <div class="title">Course title</div>
+          <p class='desc'> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste natus debitis neque. Et quos maiores neque, expedita aperiam
+          </p>
+        </div>
+
+        <div class="square">
+          <img
+            src="https://i.pinimg.com/564x/11/8a/83/118a835336b1e8902278e64d71db1438.jpg">
+            <div class="title">Course title</div>
+          <p class='desc'> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste natus debitis neque. Et quos maiores neque, expedita aperiam
+          </p>
+        </div>
+
+        <div class="square">
+          <img
+            src="https://images.unsplash.com/photo-1605379399642-870262d3d051?q=80&w=1812&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+            <div class="title">Course title</div>
+          <p class='desc'> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste natus debitis neque. Et quos maiores neque, expedita aperiam
+          </p>
+        </div>
+
+        <div class="square">
+          <img
+            src="https://images.unsplash.com/photo-1504610926078-a1611febcad3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e1c8fe0c9197d66232511525bfd1cc82&auto=format&fit=crop&w=1100&q=80">
+            <div class="title">Course title</div>
+          <p class='desc'> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste natus debitis neque. Et quos maiores neque, expedita aperiam
+          </p>
+        </div>
+
+        <div class="square">
+          <img
+            src="https://images.unsplash.com/photo-1504610926078-a1611febcad3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e1c8fe0c9197d66232511525bfd1cc82&auto=format&fit=crop&w=1100&q=80">
+            <div class="title">Course title</div>
+          <p class='desc'> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda iusto molestiae adipisci vero doloremque, recusandae sint! A commodi exercitationem cupiditate quae dolorum porro, doloremque id cum reiciendis dolore fugit praesentium? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, nobis? Dignissimos fugit nostrum asperiores et tempore deleniti consequatur velit eveniet id. Officiis nulla delectus adipisci error, necessitatibus rerum amet aperiam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste natus debitis neque. Et quos maiores neque, expedita aperiam
+          </p>
+        </div>
+        -->
+
+      </div>
+    </div>
+
+      <!-- All courses button -->
+      <div class="all-courses">
+        <button class="show-courses all-courses-btn">Show all courses</button>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer-basic">
+        <footer>
+          <div class="social">
+            <a target="_blank" href="https://github.com/nimba005"><i class="fab fa-github"></i></a><a target="_blank" href="https://twitter.com/nimbajohn"><i class="fab fa-twitter"></i></a><a target="_blank" href="https://www.linkedin.com/in/nimba-eric-john-4141592b1/"><i class="fab fa-linkedin"></i></a>
+          </div>
+          <!-- <ul class="list-inline">
+            <li class="list-inline-item"><a href="index.html">Home</a></li>
+            <li class="list-inline-item"><a href="courses.html">Courses</a></li>
+            <li class="list-inline-item"><a href="about.html">About</a></li>
+            <li class="list-inline-item"><a href="contactUs.html">Contact Us</a></li>
+          </ul> -->
+          <p class="copyright">Nimba Eric John ©2023</p>
+        </footer>
+      </div>
+      <script src="../assets/script/main.js"></script>
+      <script src="../assets/script/courses.js"></script>
+  </body>
+</html>
