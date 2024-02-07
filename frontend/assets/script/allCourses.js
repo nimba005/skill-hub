@@ -24,7 +24,7 @@ function getCourses() {
 	    <div class="title">${course.title}</div>
 	  <p class='desc'>${course.description}
 	  </p>
-	</div>
+	</div>`
       }).join("");
     })
     .catch(fuction(error) {
