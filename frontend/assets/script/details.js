@@ -31,21 +31,43 @@ function course_render() {
 	throw new Error(res.status);
       }
       return res.json();
-      })
-      .then((res)=>{
+    })
+    .then((res)=>{
+      // Updating the course info with the course data
+      course = res.course;
+      course_desc.innerText = course.description;
+      course_tit.innerText = course.title;
+      course_likes.innerText = course.likes;
 
-
-
-
-	      e" onclick="courseClick('${course.id}')">
-	  <img
-	    src="${course.image_url}">
-	    <div class="title">${course.title}</div>
-	  <p class='desc'>${course.description}
-	  </p>
-	</div>`
+      // Updating the course videos with the video values of the course data
+      course_videos = course.videos;
+      video_cont.innerHTML = course_videos.map((video)=>{
+	return `
+	  <div class="video-details">
+	    <div class="video-title">
+	      <h3>${video.title}</h3>
+	    </div>
+	    <div class="videos">
+	      ${video.embed_link}
+	      <div class='heart'></div>
+	      <div class='clock'></div>
+              <div class='share'></div>
+	    </div>
+          </div>`
       }).join("");
+    })
+    .catch((err)=>{
+      console.error(err.message);
+    })
+  }
+}
 
+likeBt.addEventListener("click", ()=> {
+  if (userDet) {
+    likeBt.innerText = "..."
+
+      let dt = JSON.parse(userDet);
+      
       // RENDERING POPULAR COURSES
       // Sorting popular courses from the res data
       let data = []
