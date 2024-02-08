@@ -69,6 +69,9 @@ likeBt.addEventListener("click", ()=> {
       let dt = JSON.parse(userDet);
       let userId = dt.id;
       let courseId = dt.selected_course;
+      let courseTitle = course_tit.innerText;
+
+      
 
       
       // RENDERING POPULAR COURSES
