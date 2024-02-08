@@ -68,7 +68,7 @@ function getCourses() {
         </div>`
       }).join("");
     })
-    .catch(fuction(error) {
+    .catch(function(error) {
       topCoursesCont.innerHTML = "<p class='courseError'>Error Fetching Courses</p>";
       popCoursesCont.innerHTML = "<p class='courseError'>Error Fetching Courses</p>";
       console.error(error);
