@@ -66,64 +66,49 @@ likeBt.addEventListener("click", ()=> {
   if (userDet) {
     likeBt.innerText = "..."
 
-      let dt = JSON.parse(userDet);
-      let userId = dt.id;
-      let courseId = dt.selected_course;
-      let courseTitle = course_tit.innerText;
-
+    let dt = JSON.parse(userDet);
+    let userId = dt.id;
+    let courseId = dt.selected_course;
+    let courseTitle = course_tit.innerText;
       
+    let rLikes = localStorage.getItem("likes-reg")
+    if (JSON.stringify(rLikes).includes(courseId)) {
+      alert("You already liked the course!");
+      likeBt.innerText = "LIKE"
+      return
+    }
 
-      
-      // RENDERING POPULAR COURSES
-      // Sorting popular courses from the res data
-      let data = []
-      for (let dt of res) {
-	if (dt.is_popular) {
-	  data.push(dt);
-	}
-      }
-
-      // Getting random 6 unique datas from popular courses data
-      for (let i = 0; i < 6; i++) {
-	var randomNumber = Math.floor(Math.random() * data.length);
-        while (popCoursesList.includes(data[randomNumber])) {
-          randomNumber = Math.floor(Math.random() * data.length);
-        }
-        popCoursesList.push(data[randomNumber]);
-      }
-      popCoursesCont.innerHTML = popCoursesList.map((course)=>{
-        return `
-        <div class="square" onclick="courseClick('${course.id}')">
-          <img
-            src="${course.image_url}">
-            <div class="title">${course.title}</div>
-          <p class='desc'>${course.description}
-          </p>
-        </div>`
-      }).join("");
+    let postData = {
+      course_id: courseId,
+      user_id: userId,
+      course_tittle: courseTitle
+    }
+    fetch( `${host}/api/registered`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(postData)
     })
-    .catch(fuction(error) {
-      topCoursesCont.innerHTML = "<p class='courseError'>Error Fetching Courses</p>";
-      popCoursesCont.innerHTML = "<p class='courseError'>Error Fetching Courses</p>";
-      console.error(error);
+    .then((res)=>{
+      if (!res.ok) {
+        throw new Error(res.status)
+      }
+      return res.json()
     })
-}
-
-function courseClick(course_id) {
-  let user = localStorage.getItem("user-data");
-
-  if (!user) {
-    alert("You have to sign in to access the course");
-  } else {
-    user = JSON.parse(user);
-    user.selected_course = course_id;
-    localStorage.setItem("user-data", JSON.stringify(user));
-    location.href = "details.html"
+    .then((res)=>{
+      rLikes = JSON.parse(rLikes)
+      rLikes.push(res.registered_course.course_id)
+      localStorage.setItem("likes-reg", JSON.stringify(rLikes))
+      var newLikes = parseInt(course_likes.innerText, 10) + 1;
+      course_likes.innerText = newLikes;
+      likeBt.innerText = "Like"
+    })
+    .catch((err)=>{
+      likeBt.innerText = "LIKE"
+      console.error(err);
+    })
   }
-}
+});
 
-allCourseBtn.addEventListener("click", ()=>{
-  location.href = "allCourses.html";
-})
-
-getCourses();
+course_render();
