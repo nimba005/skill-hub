@@ -1,0 +1,63 @@
+/* Landingg image */
+.about-land {
+  background-image: url('https://images.unsplash.com/photo-1552581234-26160f608093?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') !important;
+}
+/* Welcome Section */
+.about-us {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-evenly;
+}
+/* Mobile & Tablet Rules */
+@media (max-width: 767px) {
+  .about-us {
+    margin-top: 40px;
+    text-align: center;
+  }
+  .about-us .left-sec img {
+    display: none;
+  }
+}
+/* Small screen rules */
+@media (min-width: 768px) {
+  .about-us .left-sec img {
+    display: none;
+  }
+}
+/* Medium screen rules */
+@media (min-width: 992px) {
+  .about-us .left-sec img {
+    width: 122px;
+    height: 122px;
+    border-radius: 33px;
+    display: block;
+    margin-right: 20px;
+  }
+}
+/* Large device rule */
+@media (min-width: 1200px) {
+  .about-us .left-sec img {
+    width: 444px;
+    height: 444px;
+    border-radius: 33px;
+    display: block;
+  }
+}
+.about-us .left-sec {
+  max-width: 100%;
+}
+.about-us .left-sec img {
+  width: 444px;
+  height: 444px;
+  border-radius: 33px;
+}
+.about-us .right-sec {
+  max-width: 100%;
+  margin-right: 50px;
+}
+.about-us .right-sec span {
+  color: var(--main);
+  font-weight: bold;
+  font-size: 25px;
+  position: relative;
+}
