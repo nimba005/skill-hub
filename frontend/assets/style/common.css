@@ -1,0 +1,128 @@
+:root {
+  -main: #b1a6a4;
+  --light: #f2f1ef;
+  --dark: #413f3d;
+}
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+/* Start styling nevbar */
+.nav {
+  border-bottom: 1px solid grey;
+  position: relative;
+  z-index: 5000 !important;
+}
+.nav__toggle {
+  position: absolute;
+  cursor: pointer;
+  margin: 0rem 1rem;
+  right: 0;
+  z-index: 5000 !important;
+}
+.nav .nav__menu .active {
+  color: var(--main);
+}
+.close,
+input[type='checkbox'] {
+  display: none;
+}
+.hamburger {
+  margin-top: 0.2rem;
+}
+.nav__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  margin: 1rem;
+}
+li {
+  list-style: none;
+  display: none;
+}
+li:first-child {
+  margin-right: auto;
+  display: block;
+  z-index: 5000 !important;
+}
+.nav__menu a:hover {
+  color: var(--main);
+  font-weight: bold;
+}
+.nav__menu a {
+  text-decoration: none;
+  color: var(--dark);
+  font-size: 1.2rem;
+  /* background-color: white;
+  padding: 15.5px; */
+}
+.nav__menu a.logo {
+  color: var(--main);
+  font-weight: bold;
+  font-size: 30px;
+}
+#nav__checkbox:checked ~ ul.nav__menu li {
+  display: block;
+  z-index: 5000 !important;
+}
+#nav__checkbox:checked ~ label.nav__toggle .hamburger {
+  display: none;
+}
+#nav__checkbox:checked ~ label.nav__toggle .close {
+  display: block;
+  z-index: 5000 !important;
+}
+@media only screen and (min-width: 768px) {
+  .nav {
+    position: relative !important;
+    z-index: 5000 !important;
+  }
+  .nav__toggle {
+    display: none;
+    z-index: 5000 !important;
+    position: relative !important;
+    z-index: 5000 !important;
+  }
+  .nav__menu {
+    flex-direction: row;
+    z-index: 5000 !important;
+    position: relative !important;
+    z-index: 5000 !important;
+  }
+  .nav__menu li {
+    display: block;
+    position: relative !important;
+    z-index: 5000 !important;
+  }
+}
+/* End navbar */
+/* Landing section */
+.about-land {
+  min-height: 100vh;
+  background-image: url('../../img/carousel-1.jpg');
+  background-size: cover;
+  position: relative;
+  width: 100%;
+}
+/* Mobile & Tablet Rules */
+@media (max-width: 767px) {
+  .about-land {
+    max-width: 100%;
+  }
+  .about-land .about-text span {
+    font-size: 20px !important;
+    transform: translateX(-23%);
+  }
+}
+a {
+  text-decoration: none;
+}
