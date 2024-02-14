@@ -1,0 +1,157 @@
+.about-land {
+  background-image: url("https://images.unsplash.com/photo-1487611459768-bd414656ea10?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") !important;
+}
+/* <!-- Get in touch section --> */
+  .contact {
+    margin-top: 40px;
+  }
+  .contact .details {
+    margin-bottom: 20px;
+  }
+  span, p {
+    margin: 0;
+    padding: 0;
+  }
+  .contact .details span{
+    color: var(--main);
+    font-size: 19px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4px;
+    position: relative;
+  }
+  .contact .details span::before{
+    position: absolute;
+    content: "";
+    background-color: var(--dark);
+    top: 60%;
+    left: 54%;
+    width: 47px;
+    height: 1px;
+  }
+  .contact .details span::after{
+    position: absolute;
+    content: "";
+    background-color: var(--dark);
+    top: 57%;
+    left: 43%;
+    width: 47px;
+    height: 1px;
+  }
+  .contact .details span{
+    color: var(--main);
+    font-size: 19px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
+  }
+  .contact .details p{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+  }
+/* Start Contact us */
+.contact {
+  min-height: 600px;
+  background-image: url(../../img/map.jpg);
+  background-size: cover;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+}
+.contact .overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255, 0.6);
+}
+.contact .cont-container {
+  z-index: 2;
+  position: relative;
+  max-width: 1140px;
+  margin: auto;
+}
+.contact .cont-container h2 {
+  font-weight: bold;
+  font-size: 30px;
+  color: var(--main);
+  margin: 0 0 10px;
+  text-align: center;
+}
+.contact form {
+  overflow: hidden;
+  max-width: 800px;
+  margin: auto;
+}
+.contact .left{
+  float: left;
+  width: 49%;
+}
+.contact .right{
+  float: right;
+  width: 49%;
+}
+@media(max-width: 767px) {
+  .contact .left,
+  .contact .right{
+    float: none;
+    margin: auto;
+    width: 100%;
+  }
+}
+.contact form input:not([type="submit"]),
+.contact textarea {
+  background-color: rgba(255, 255, 255, 0.534);
+  padding: 10px;
+  display: block;
+  margin-bottom: 15px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid var(--main);
+}
+.contact form input:not([type="submit"]):focus,
+.contact textarea:focus{
+  outline: 1px solid var(--main);
+}
+.contact form input {
+  width: 40px;
+}
+.contact textarea{
+  height: 150px;
+}
+.contact input[type="submit"] {
+  background-color: var(--main);
+  color: white;
+  font-weight: bold;
+  border-color: transparent;
+  border-radius: 4px;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  cursor: pointer;
+}
+.contact textarea:focus::-webkit-input-placeholder,
+.contact form input:not([type="submit"]):focus::-ms-input-placeholder{
+  opacity: 0;
+  transform: 3s;
+}
+.contact textarea:focus::-ms-input-placeholder,
+.contact form input:not([type="submit"])focus::-ms-input-placeholder{
+  opacity: 0;
+  transform: 3s;
+}
+.contact textarea:focus::placeholder,
+.contact form input:not([type="submit"]):focus::placeholder{
+  opacity: 0;
+  transform: 3s;
+}
+/* End Contact us */
