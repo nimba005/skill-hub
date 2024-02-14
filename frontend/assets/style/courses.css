@@ -1,0 +1,85 @@
+.about-land {
+  background-image: url('https://images.unsplash.com/photo-1485988412941-77a35537dae4?q=80&w=1796&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') !important;
+}
+/* Start courses section */
+.courses-sec {
+  margin-top: 40px;
+}
+.courses-sec span,
+.courses-sec p {
+  padding: 0;
+  margin: 0;
+}
+.courses-sec span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--main);
+  font-size: 18px;
+  position: relative;
+}
+.courses-sec span::before {
+  content: '';
+  width: 50px;
+  height: 1px;
+  background-color: var(--dark);
+  position: absolute;
+  top: 70%;
+  left: 53%;
+}
+.courses-sec span::after {
+  content: '';
+  width: 50px;
+  height: 1px;
+  background-color: var(--dark);
+  position: absolute;
+  top: 70%;
+  left: 44%;
+}
+.courses-sec p {
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 2;
+}
+/* All Courses Button */
+.all-courses {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Mobile & Tablet Rules */
+@media (max-width: 767px) {
+  .all-courses button {
+    max-width: 200px;
+    font-size: 15px !important;
+  }
+}
+/* Small screen rules */
+@media (min-width: 768px) and (max-width: 991px){
+  .all-courses button {
+    max-width: 300px;
+    font-size: 20px !important;
+  }
+}
+.all-courses button {
+  padding: 20px;
+  font-weight: bold;
+  font-size: 19px;
+  width: 425px;
+  background: -webkit-linear-gradient(top left, white 50%, #b1a6a4 50%);
+  background: -moz-linear-gradient(top left, white 50%, #b1a6a4 50%);
+  background: -ms-linear-gradient(top left, white 50%, #b1a6a4 50%);
+  background: -o-linear-gradient(top left, white 50%, #b1a6a4 50%);
+  background: linear-gradient(top left, white 50%, #b1a6a4 50%);
+  border-radius: 15px 0px;
+  cursor: pointer;
+  color: var(--dark);
+  transition: 1s;
+}
+.all-courses button:hover {
+  width: 450px;
+  background-color: transparent;
+  color: var(--main);
+}
