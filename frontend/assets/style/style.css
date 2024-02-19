@@ -1,0 +1,65 @@
+/* Slide show style */
+.landing {
+  min-height: 100vh;
+  background-image: url('../img/corousel-1.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+}
+/* Adjusting it in extra small devices */
+@media (max-width: 767px) {
+  .landing .text-cont .title {
+    font-size: 18px !important;
+  }
+  .landing .text-cont .details {
+  }
+  .landing {
+    max-width: 100%;
+    background-position: center;   
+  }
+}
+/* Small devices */
+@media (min-width: 768px) {
+  .landing .text-cont .title {
+    font-size: 18px !important;
+  }
+}
+/* Medium device rules */
+@media (min-width: 992px) {
+  .landing .text-cont .title {
+    font-size: 40px !important;
+  }
+}
+/* Big device rules */
+@media (min-width: 1200px) {
+  .landing .text-cont .title {
+    font-size: 55px !important;
+  }
+}
+.landing .layout {
+  background-color: #413f3dac;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+.landing .text-cont {
+  display: inline-block;
+  padding: 10px;
+  position: absolute;
+  top: 45%;
+  left: 4%;
+  z-index: 1;
+  margin-top: -30px;
+}
+.landing .text-cont span {
+  font-weight: bold;
+  color: var(--main);
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+}
