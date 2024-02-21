@@ -370,4 +370,231 @@ p {
 .boxes .card {
   background-color: rgb(197, 182, 174);
   width: 322px;
+  height: 425px;
+  position: absolute;
+  top: 66%;
+  text-align: left;
+  padding: 20px;
+}
+.boxes .card-1 {
+  left: -75px;
+}
+.boxes .card-2 {
+  left: 29%;
+}
+.boxes .card-3 {
+  left: 64.8%;
+}
+.boxes .card i {
+  font-size: 28px;
+  color: #807179;
+}
+.boxes .card h3 {
+  font-size: 21px;
+  color: #000000b3;
+}
+.boxes .card p {
+  line-height: 2;
+  color: gray;
+  font-weight: bold;
+  width: fit-content;
+}
+.feature span {
+  color: var(--main);
+  font-weight: bold;
+  font-size: 25px;
+  position: relative;
+  left: 45%;
+}
+.feature span::before {
+  position: absolute;
+  content: '';
+  background-color: var(--dark);
+  width: 50px;
+  height: 2px;
+  left: 110%;
+  bottom: 26%;
+}
+.feature span::after {
+  position: absolute;
+  content: '';
+  background-color: var(--dark);
+  width: 37px;
+  height: 2px;
+  left: 111%;
+  bottom: 65%;
+}
+/* End the feature section */
+/* About us section */
+.about-us {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-evenly;
+}
+/* Mobile & Tablet Rules */
+@media (max-width: 767px) {
+  .about-us {
+    margin-top: 40px;
+    text-align: center;
+  }
+  .about-us .left-sec img {
+    display: none;
+  }
+  .about-us .right-sec {
+    max-width: 100%;
+  }
+  .about-us .right-sec p {
+    max-width: 100%;
+    line-height: 2 !important;
+    font-size: 13px !important;
+  }
+}
+/* Small screen rules */
+@media (max-width: 768px) {
+  .about-us .left-sec img {
+    display: none;
+  }
+}
+/* Medium screen rules */
+@media (min-width: 992px) {
+  .about-us .left-sec img {
+    width: 122px;
+    height: 122px;
+    border-radius: 33px;
+    display: block;
+    margin-right: 20px;
+  }
+}
+/* Large devices rules */
+@media (min-width: 1200px) {
+  .about-us .left-sec img {
+    width: 444px;
+    height: 444px;
+    border-radius: 33px;
+    display: block;
+  }
+}
+.about-us .left-sec {
+  max-width: 100%;
+}
+.about-us .left-sec img {
+  width: 444px;
+  height: 444px;
+  border-radius: 33px;
+}
+.about-us .right-sec {
+  max-width: 50%;
+  margin-right: 50px;
+}
+.about-us .right-sec span {
+  color: var(--main);
+  font-weight: bold;
+  font-size: 25px;
+  position: relative;
+}
+.about-us .right-sec span::before {
+  position: absolute;
+  content: '';
+  background-color: var(--dark);
+  width: 50px;
+  height: 2px;
+  left: 110%;
+  bottom: 26%;
+}
+.about-us .right-sec span::after {
+  position: absolute;
+  content: '';
+  background-color: var(--dark);
+  width: 37px;
+  height: 2px;
+  left: 111%;
+  bottom: 65%;
+}
+.about-us .right-sec .welcome {
+  font-size: 30px;
+  color: var(--dark);
+  letter-spacing: 1px;
+  font-weight: bold;
+  border-bottom: 20px;
+}
+.about-us .right-sec p {
+  line-height: 2;
+  font-size: 16px;
+  color: gray;
+  line-height: 2.5;
+}
+img.github-link {
+  width: 114px;
+  height: 34px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.alx-link {
+  width: 50px;
+  height: 27px;
+  margin-bottom: 70px;
+  margin-top: 20px;
+}
+/* .about-us .right-sec .p2 {
+  margin-bottom: 20px;
+} */
+.about-us .about-btn {
+  padding: 20px;
+  border: none;
+  transform-style: preserve-3d;
+  background: -webkit-linear-gradient(top left, white 50%, #b1a6a4 50%);
+  background: -moz-linear-gradient(top left, white 50%, #b1a6a4 50%);
+  background: -ms-linear-gradient(top left, white 50%, #b1a6a4 50%);
+  background: -o-linear-gradient(top left, white 50%, #b1a6a4 50%);
+  background: linear-gradient(top left, white 50%, #b1a6a4 50%);
+  color: var(--dark);
+  font-weight: bold;
+  width: 180px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 15px 0px;
+}
+/* category section */
+.courses-sec {
+  margin-top: 40px;
+}
+.courses-sec span,
+.courses-sec p {
+  padding: 0;
+  margin: 0;
+}
+.courses-sec .pop-span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--main);
+  font-size: 20px;
+  position: relative;
+  font-weight: bold;
+}
+.courses-sec .pop-span::before {
+  content: '';
+  width: 50px;
+  height: 1px;
+  background-color: var(--dark);
+  position: absolute;
+  top: 70%;
+  left: 54%;
+}
+.courses-sec .pop-span::after {
+  content: '';
+  width: 50px;
+  height: 1px;
+  background-color: var(--dark);
+  position: absolute;
+  top: 70%;
+  left: 43%;
+}
+.courses-sec .course-p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.projcard-container {
+  margin: 50px 0;
 }
