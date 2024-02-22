@@ -7,7 +7,7 @@ from flask import Blueprint, render_template
 
 web_blueprint = Blueprint("web_blueprint", __name__)
 
-@web_print.route("/")
+@web_blueprint.route("/")
 def home():
     return render_template("index.html")
 

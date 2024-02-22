@@ -3,7 +3,7 @@
 """
 General blueprint setup module for images files
 """
-from flask import Bleuprint, send_from_directory
+from flask import Blueprint, send_from_directory
 
 img_blueprint = Blueprint(
         "img_blueprint", __name__, url_prefix="/img"
