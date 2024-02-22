@@ -5,7 +5,7 @@ Video TABLE declaration for our database
 """
 
 from sqlalchemy import Column, ForeignKey, String
-from backend.storage.tables.user import Base
+from .user import Base
 from sqlalchemy.orm import Relationship
 from uuid import uuid4
 

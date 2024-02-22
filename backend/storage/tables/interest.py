@@ -4,7 +4,7 @@ Interest TABLE declaration for our database
 """
 
 from sqlalchemy import Column, ForeignKey, Integer, String
-from backend.storage.tables.user import Base
+from .user import Base
 from sqlalchemy.orm import Relationship
 
 class Interest(Base):

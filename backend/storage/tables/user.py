@@ -6,7 +6,7 @@ User TABLE declaration for our database
 
 from uuid import uuid4
 from sqlalchemy import Boolean, Column, String
-from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import declarative_base
 from sqlalchemy.orm import Relationship
 
 Base = declarative_base()

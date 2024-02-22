@@ -6,7 +6,7 @@ Review TABLE declaration for our database
 
 from datetime import datetime
 from sqlalchemy import Column, DateTime, ForeignKey, String
-from backend.storage.tables.user import Base
+from .user import Base
 from sqlalchemy.orm import Relationship
 from uuid import uuid4
 

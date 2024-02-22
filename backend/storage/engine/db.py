@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """
-The engine for managing ourn database data
+The engine for managing our database data
 """
-
+import sys
+print(sys.path)
 from sqlalchemy import create_engine
 from sqlalchemy.orm import scoped_session, sessionmaker
 from backend.storage.tables.user import Base, User
@@ -22,17 +23,17 @@ class Database:
 
     def __init__(self):
         """
-        Initializtions
+        Initializations
         """
         self.__session = None
         self.__connected = False
 
     def connect(self):
         """
-        db methods that starts and connects to the database
+        db method that starts and connects to the database
         """
         try:
-            # loadiing DB details from environment data
+            # loading DB details from environment data
             load_dotenv()
             user = getenv("DB_USER")
             password = getenv("DB_PASSWORD")
@@ -126,10 +127,10 @@ class Database:
         column data
         """
         if self.__connected:
-            datas = self.__session.query(table).all()
-            for data in datas:
-                if data.id == str(id):
-                    return data
+            data = self.__session.query(table).all()
+            for row in data:
+                if row.id == str(id):
+                    return row
             return {}
         else:
             return None
