@@ -1,5 +1,5 @@
 # SKILL-HUB
-![image](https://github.com/nimba005/portfolio-project/assets/105091783/94c01b68-4502-4121-adf9-986ec2f169b5)
+![image](https://github.com/nimba005/portfolio-project/assets/105091783/ce333d3d-fac2-4ddf-85bc-bddd84e519f0)
 
 
 
