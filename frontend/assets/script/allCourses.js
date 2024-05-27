@@ -1,6 +1,5 @@
 var coursesCont = document.querySelector('.course-container')
 // var host = "https://localhost:5000";
-var host = "https://skillhub.realnimbake.tech"
 
 // Sending request to the database for courses data
 function getCourses() {

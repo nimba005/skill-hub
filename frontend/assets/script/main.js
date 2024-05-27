@@ -6,7 +6,6 @@ var aboutBtn = document.querySelector('.about-btn');
 var logout = document.getElementById('logout');
 var showCourse = document.querySelector('.show-courses');
 // var host = "http://localhost:5000";
-var host_ = "https://skillhub.realnimbake.tech"
 
 function checkUserSignIn() {
   if (user != null) {

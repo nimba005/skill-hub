@@ -1,7 +1,6 @@
 let form = document.querySelector(".fr")
 let subButton = document.querySelector(".submit-btn")
 // let host = "http://localhost:5000";
-var host = "https://skillhub.realnimbake.tech"
 
 // Function adjust the cursor in sign up and log in form
     function adjustCursorInForm() {
